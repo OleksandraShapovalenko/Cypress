@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-01T14:41:13.383Z",
+    "end": "2024-11-01T14:41:17.272Z",
+    "duration": 3889,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "feb1f813-f26f-48c1-a735-880f27b8232c",
+      "title": "",
+      "fullFile": "cypress/e2e/env_variables/Item_page.cy.js",
+      "file": "cypress/e2e/env_variables/Item_page.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90657f91-b6d9-4748-8df8-95d24a4adac2",
+          "title": "Inventory page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should contain elements",
+              "fullTitle": "Inventory page should contain elements",
+              "timedOut": null,
+              "duration": 1173,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(_Items.default.image).to.be.not.undefined;\nexpect(_Items.default.description).to.be.not.undefined;\nexpect(_Items.default.itemName).to.be.not.undefined;\nexpect(_Items.default.price).to.be.not.undefined;",
+              "err": {},
+              "uuid": "d091ba9f-89f5-4090-b5bf-03b2dc82530e",
+              "parentUUID": "90657f91-b6d9-4748-8df8-95d24a4adac2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remove button display",
+              "fullTitle": "Inventory page Remove button display",
+              "timedOut": null,
+              "duration": 1153,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_Items.default.clickAddToCartButton(), cy.get('[data-test=\"remove\"]').should('be.visible');\ncy.get('[data-test=\"remove\"]').click();\ncy.get('[data-test=\"add-to-cart\"]').should('be.visible');",
+              "err": {},
+              "uuid": "3bf6f7c6-e7a1-4e05-90b3-ce8b3c7dd974",
+              "parentUUID": "90657f91-b6d9-4748-8df8-95d24a4adac2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d091ba9f-89f5-4090-b5bf-03b2dc82530e",
+            "3bf6f7c6-e7a1-4e05-90b3-ce8b3c7dd974"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2326,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
